@@ -734,10 +734,20 @@ def render_chart_html(chart_html: str, height: int) -> None:
             const chart = chartScroller.querySelector(".js-plotly-plot");
             chartScroller.style.touchAction = "pan-x pan-y";
             if (chart && window.Plotly) {{
-                Plotly.react(chart, chart.data, chart.layout, {{
-                    ...chart._context,
-                    staticPlot: true,
-                    displayModeBar: false,
+                Plotly.relayout(chart, {{
+                    dragmode: false,
+                    "xaxis.fixedrange": true,
+                    "yaxis.fixedrange": true,
+                }});
+                chart.on("plotly_click", (event) => {{
+                    const point = event.points?.[0];
+                    if (!point) {{
+                        return;
+                    }}
+                    Plotly.Fx.hover(
+                        chart,
+                        [{{ curveNumber: point.curveNumber, pointNumber: point.pointNumber }}]
+                    );
                 }});
             }}
         }}
