@@ -735,19 +735,23 @@ def render_chart_html(chart_html: str, height: int) -> None:
             chartScroller.style.touchAction = "pan-x pan-y";
             if (chart && window.Plotly) {{
                 Plotly.relayout(chart, {{ dragmode: false }});
+                chart.style.touchAction = "none";
             }}
 
-            const preventTouchZoom = (event) => {{
-                if (event.touches?.length > 1) {{
+            const preventTouchPlotInteraction = (event) => {{
+                if (
+                    event.touches?.length > 1
+                    || event.target.closest(".js-plotly-plot")
+                ) {{
                     event.preventDefault();
                     event.stopPropagation();
                 }}
             }};
-            chartScroller.addEventListener("touchstart", preventTouchZoom, {{
+            chartScroller.addEventListener("touchstart", preventTouchPlotInteraction, {{
                 passive: false,
                 capture: true,
             }});
-            chartScroller.addEventListener("touchmove", preventTouchZoom, {{
+            chartScroller.addEventListener("touchmove", preventTouchPlotInteraction, {{
                 passive: false,
                 capture: true,
             }});
