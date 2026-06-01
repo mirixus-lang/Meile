@@ -710,6 +710,7 @@ def figure_to_html(fig: go.Figure) -> str:
 
 
 def render_chart_html(chart_html: str, height: int) -> None:
+    """Render a scrollable chart and suppress touch zoom on touch-capable devices."""
     components.html(
         f"""
         <div
@@ -726,6 +727,35 @@ def render_chart_html(chart_html: str, height: int) -> None:
                 event.preventDefault();
             }}
         }}, {{ passive: false }});
+
+        const isTouchDevice =
+            navigator.maxTouchPoints > 0 || "ontouchstart" in window;
+        if (isTouchDevice) {{
+            const chart = chartScroller.querySelector(".js-plotly-plot");
+            chartScroller.style.touchAction = "pan-x pan-y";
+            if (chart && window.Plotly) {{
+                Plotly.relayout(chart, {{ dragmode: false }});
+            }}
+
+            const preventTouchZoom = (event) => {{
+                if (event.touches?.length > 1) {{
+                    event.preventDefault();
+                    event.stopPropagation();
+                }}
+            }};
+            chartScroller.addEventListener("touchstart", preventTouchZoom, {{
+                passive: false,
+                capture: true,
+            }});
+            chartScroller.addEventListener("touchmove", preventTouchZoom, {{
+                passive: false,
+                capture: true,
+            }});
+            chartScroller.addEventListener("gesturestart", (event) => {{
+                event.preventDefault();
+                event.stopPropagation();
+            }}, {{ passive: false, capture: true }});
+        }}
         </script>
         """,
         height=height + 30,
