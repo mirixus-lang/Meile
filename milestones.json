@@ -1,0 +1,426 @@
+{
+  "projects": [
+    {
+      "project": {
+        "project_name": "Beispielprojekt der Firma Muster AG im Jahr 1",
+        "planning_start": "2026-03-24",
+        "planning_end": "2026-06-24",
+        "start_id": 1,
+        "start_section_number": 1
+      },
+      "milestones": [
+        {
+          "ID": 1,
+          "Name": "Erstes Treffen",
+          "Typ": "Meilenstein",
+          "Start": "2026-03-24",
+          "Dauer": 0,
+          "Ende": "2026-03-24",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 2,
+          "Name": "1. Projektmanagement",
+          "Typ": "Abschnitt",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Eric Harnischfeger"
+        },
+        {
+          "ID": 3,
+          "Name": "    1.1 Erstellung Rahmenterminplan Gantt",
+          "Typ": "Im Plan",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Justus"
+        },
+        {
+          "ID": 4,
+          "Name": "    1.2 Erstellung Struktur OPL, ToDo-Liste o.ä.",
+          "Typ": "Im Plan",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Justus Jonas"
+        },
+        {
+          "ID": 5,
+          "Name": "    1.3 Erstellung Vorlage für Protokolle",
+          "Typ": "Im Plan",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Torben"
+        },
+        {
+          "ID": 6,
+          "Name": "    1.4 Erstellung Projektvereinbarung",
+          "Typ": "Im Plan",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Justus"
+        },
+        {
+          "ID": 7,
+          "Name": "    1.5 Erstellung Struktur VMI",
+          "Typ": "Im Plan",
+          "Start": "2026-03-24",
+          "Dauer": 4,
+          "Ende": "2026-03-27",
+          "Vorgänger": "",
+          "Resource": "Torben"
+        },
+        {
+          "ID": 8,
+          "Name": "Organisation und Zielsetzung steht",
+          "Typ": "Meilenstein",
+          "Start": "2026-03-27",
+          "Dauer": 0,
+          "Ende": "2026-03-27",
+          "Vorgänger": "3;4;5;6;7;8",
+          "Resource": "Justus"
+        },
+        {
+          "ID": 9,
+          "Name": "2. Klärung Aufgabenstellung",
+          "Typ": "Abschnitt",
+          "Start": "2026-03-28",
+          "Dauer": 13,
+          "Ende": "2026-04-09",
+          "Vorgänger": "8",
+          "Resource": "Torben"
+        },
+        {
+          "ID": 10,
+          "Name": "    2.1 Technische Recherche durchführen",
+          "Typ": "Im Plan",
+          "Start": "2026-03-28",
+          "Dauer": 5,
+          "Ende": "2026-04-01",
+          "Vorgänger": "",
+          "Resource": "Justus"
+        },
+        {
+          "ID": 11,
+          "Name": "    2.2 Aufgabenstellung formulieren",
+          "Typ": "Im Plan",
+          "Start": "2026-04-01",
+          "Dauer": 1,
+          "Ende": "2026-04-01",
+          "Vorgänger": "10",
+          "Resource": "Torben"
+        },
+        {
+          "ID": 12,
+          "Name": "    2.3 Anforderungsliste erstellen",
+          "Typ": "Im Plan",
+          "Start": "2026-04-02",
+          "Dauer": 8,
+          "Ende": "2026-04-09",
+          "Vorgänger": "11",
+          "Resource": "Justus"
+        },
+        {
+          "ID": 13,
+          "Name": "Recherche und AFL abgeschlossen",
+          "Typ": "Meilenstein",
+          "Start": "2026-04-09",
+          "Dauer": 0,
+          "Ende": "2026-04-09",
+          "Vorgänger": "12",
+          "Resource": ""
+        },
+        {
+          "ID": 14,
+          "Name": "3. Methodik und Abstraktion",
+          "Typ": "Abschnitt",
+          "Start": "2026-04-10",
+          "Dauer": 15,
+          "Ende": "2026-04-24",
+          "Vorgänger": "13",
+          "Resource": ""
+        },
+        {
+          "ID": 15,
+          "Name": "    3.1 Formulierung neutraler Gesamtfunktion",
+          "Typ": "Im Plan",
+          "Start": "2026-04-10",
+          "Dauer": 1,
+          "Ende": "2026-04-10",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 16,
+          "Name": "    3.2 Black Box",
+          "Typ": "Im Plan",
+          "Start": "2026-04-10",
+          "Dauer": 1,
+          "Ende": "2026-04-10",
+          "Vorgänger": "15",
+          "Resource": ""
+        },
+        {
+          "ID": 17,
+          "Name": "    3.3 Teilfunktionen",
+          "Typ": "Im Plan",
+          "Start": "2026-04-11",
+          "Dauer": 3,
+          "Ende": "2026-04-13",
+          "Vorgänger": "16",
+          "Resource": ""
+        },
+        {
+          "ID": 18,
+          "Name": "    3.4 Wirkprinzipien, Teillösungen für gem. T.",
+          "Typ": "Im Plan",
+          "Start": "2026-04-12",
+          "Dauer": 4,
+          "Ende": "2026-04-15",
+          "Vorgänger": "17",
+          "Resource": ""
+        },
+        {
+          "ID": 19,
+          "Name": "    3.5 Hierachische oder dynamische Funktionsstr.",
+          "Typ": "Im Plan",
+          "Start": "2026-04-16",
+          "Dauer": 1,
+          "Ende": "2026-04-16",
+          "Vorgänger": "18",
+          "Resource": ""
+        },
+        {
+          "ID": 20,
+          "Name": "    3.6 Morphologischer Kaste",
+          "Typ": "Im Plan",
+          "Start": "2026-04-16",
+          "Dauer": 9,
+          "Ende": "2026-04-24",
+          "Vorgänger": "19",
+          "Resource": ""
+        },
+        {
+          "ID": 21,
+          "Name": "    3.7 Kreativitätstechniken",
+          "Typ": "Im Plan",
+          "Start": "2026-04-10",
+          "Dauer": 15,
+          "Ende": "2026-04-24",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 22,
+          "Name": "    3.8 Weiterlaufende Recherche, Aktualisierung AFL",
+          "Typ": "Im Plan",
+          "Start": "2026-04-10",
+          "Dauer": 15,
+          "Ende": "2026-04-24",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 23,
+          "Name": "4. Concept Race",
+          "Typ": "Abschnitt",
+          "Start": "2026-04-24",
+          "Dauer": 24,
+          "Ende": "2026-05-17",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 24,
+          "Name": "    4.1 Ausarbeitung",
+          "Typ": "Im Plan",
+          "Start": "2026-04-24",
+          "Dauer": 15,
+          "Ende": "2026-05-08",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 25,
+          "Name": "    4.2 Auswahlverfahren",
+          "Typ": "Im Plan",
+          "Start": "2026-05-08",
+          "Dauer": 10,
+          "Ende": "2026-05-17",
+          "Vorgänger": "24",
+          "Resource": ""
+        },
+        {
+          "ID": 26,
+          "Name": "5. Optimaler Entwurf",
+          "Typ": "Abschnitt",
+          "Start": "2026-05-16",
+          "Dauer": 9,
+          "Ende": "2026-05-24",
+          "Vorgänger": "25",
+          "Resource": ""
+        },
+        {
+          "ID": 27,
+          "Name": "    5.1 Optimierungsprozess Siegervariante",
+          "Typ": "Im Plan",
+          "Start": "2026-05-16",
+          "Dauer": 3,
+          "Ende": "2026-05-18",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 28,
+          "Name": "    5.2 Zeichnung mit Stückliste",
+          "Typ": "Im Plan",
+          "Start": "2026-05-16",
+          "Dauer": 8,
+          "Ende": "2026-05-23",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 29,
+          "Name": "    5.3 Beschreibung, Montage, Vor- und Nachteile",
+          "Typ": "Im Plan",
+          "Start": "2026-05-16",
+          "Dauer": 8,
+          "Ende": "2026-05-23",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 30,
+          "Name": "    5.4 Nachweise,  Abgleiche gegen AFL",
+          "Typ": "Im Plan",
+          "Start": "2026-05-23",
+          "Dauer": 2,
+          "Ende": "2026-05-24",
+          "Vorgänger": "28",
+          "Resource": ""
+        },
+        {
+          "ID": 31,
+          "Name": "Entwicklung & Konzeption abgeschlossen",
+          "Typ": "Meilenstein",
+          "Start": "2026-05-24",
+          "Dauer": 0,
+          "Ende": "2026-05-24",
+          "Vorgänger": "27;28;29;30",
+          "Resource": ""
+        },
+        {
+          "ID": 32,
+          "Name": "6. Weitere Dokumente",
+          "Typ": "Abschnitt",
+          "Start": "2026-05-24",
+          "Dauer": 12,
+          "Ende": "2026-06-04",
+          "Vorgänger": "31",
+          "Resource": ""
+        },
+        {
+          "ID": 33,
+          "Name": "    6.1 Bauteilorientierte Aufbaustruktur",
+          "Typ": "Im Plan",
+          "Start": "2026-05-24",
+          "Dauer": 7,
+          "Ende": "2026-05-30",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 34,
+          "Name": "    6.2 FMEA",
+          "Typ": "Im Plan",
+          "Start": "2026-05-24",
+          "Dauer": 7,
+          "Ende": "2026-05-30",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 35,
+          "Name": "    6.3 Produktbeschreibung",
+          "Typ": "Im Plan",
+          "Start": "2026-05-24",
+          "Dauer": 7,
+          "Ende": "2026-05-30",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 36,
+          "Name": "    6.4 Modell, Prototyp, ggf. nur für Teilfunktion",
+          "Typ": "Geringes Risiko",
+          "Start": "2026-05-24",
+          "Dauer": 12,
+          "Ende": "2026-06-04",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 37,
+          "Name": "Abschluss Dokumentation & Präsentation",
+          "Typ": "Meilenstein",
+          "Start": "2026-06-04",
+          "Dauer": 0,
+          "Ende": "2026-06-04",
+          "Vorgänger": "33;34;35;36",
+          "Resource": ""
+        },
+        {
+          "ID": 38,
+          "Name": "7. Test",
+          "Typ": "Abschnitt",
+          "Start": "2026-06-04",
+          "Dauer": 21,
+          "Ende": "2026-06-24",
+          "Vorgänger": "",
+          "Resource": ""
+        }
+      ]
+    },
+    {
+      "project": {
+        "project_name": "Testabschnitt",
+        "planning_start": "2026-06-04",
+        "planning_end": "2026-06-09",
+        "start_id": 39,
+        "start_section_number": 7
+      },
+      "milestones": [
+        {
+          "ID": 39,
+          "Name": "7. test",
+          "Typ": "Abschnitt",
+          "Start": "2026-06-01",
+          "Dauer": 6,
+          "Ende": "2026-06-06",
+          "Vorgänger": "",
+          "Resource": ""
+        },
+        {
+          "ID": 40,
+          "Name": "    7.1 test",
+          "Typ": "Im Plan",
+          "Start": "2026-06-01",
+          "Dauer": 4,
+          "Ende": "2026-06-04",
+          "Vorgänger": "",
+          "Resource": ""
+        }
+      ]
+    }
+  ]
+}
