@@ -26,7 +26,7 @@
           "Start": "2026-06-03",
           "Dauer": 38,
           "Ende": "2026-07-10",
-          "Vorgänger": "",
+          "Vorgänger": "1",
           "Resource": ""
         },
         {
@@ -256,7 +256,7 @@
           "Start": "2026-07-21",
           "Dauer": 0,
           "Ende": "2026-07-21",
-          "Vorgänger": "",
+          "Vorgänger": "24",
           "Resource": ""
         },
         {
@@ -264,9 +264,9 @@
           "Name": "    2.5 MSYS lernen",
           "Typ": "Geringes Risiko",
           "Start": "2026-07-21",
-          "Dauer": 1,
-          "Ende": "2026-07-21",
-          "Vorgänger": "",
+          "Dauer": 2,
+          "Ende": "2026-07-22",
+          "Vorgänger": "22;24",
           "Resource": ""
         },
         {
@@ -276,7 +276,7 @@
           "Start": "2026-07-23",
           "Dauer": 0,
           "Ende": "2026-07-23",
-          "Vorgänger": "",
+          "Vorgänger": "26",
           "Resource": ""
         },
         {
@@ -296,7 +296,7 @@
           "Start": "2026-07-24",
           "Dauer": 3,
           "Ende": "2026-07-26",
-          "Vorgänger": "",
+          "Vorgänger": "16;26",
           "Resource": ""
         },
         {
@@ -306,7 +306,7 @@
           "Start": "2026-07-27",
           "Dauer": 0,
           "Ende": "2026-07-27",
-          "Vorgänger": "",
+          "Vorgänger": "29",
           "Resource": ""
         },
         {
@@ -316,7 +316,7 @@
           "Start": "2026-07-28",
           "Dauer": 14,
           "Ende": "2026-08-10",
-          "Vorgänger": "",
+          "Vorgänger": "30",
           "Resource": ""
         },
         {
@@ -324,8 +324,8 @@
           "Name": "    3.1 Ausruhen I",
           "Typ": "Geringes Risiko",
           "Start": "2026-07-28",
-          "Dauer": 1,
-          "Ende": "2026-07-28",
+          "Dauer": 4,
+          "Ende": "2026-07-31",
           "Vorgänger": "",
           "Resource": ""
         },
@@ -356,7 +356,7 @@
           "Start": "2026-08-02",
           "Dauer": 2,
           "Ende": "2026-08-03",
-          "Vorgänger": "",
+          "Vorgänger": "34",
           "Resource": ""
         },
         {
@@ -366,7 +366,7 @@
           "Start": "2026-08-03",
           "Dauer": 0,
           "Ende": "2026-08-03",
-          "Vorgänger": "",
+          "Vorgänger": "35",
           "Resource": ""
         },
         {
@@ -376,7 +376,7 @@
           "Start": "2026-08-03",
           "Dauer": 7,
           "Ende": "2026-08-09",
-          "Vorgänger": "",
+          "Vorgänger": "36",
           "Resource": ""
         },
         {
@@ -396,7 +396,7 @@
           "Start": "2026-08-10",
           "Dauer": 0,
           "Ende": "2026-08-10",
-          "Vorgänger": "",
+          "Vorgänger": "37",
           "Resource": ""
         },
         {
@@ -406,7 +406,7 @@
           "Start": "2026-08-10",
           "Dauer": 21,
           "Ende": "2026-08-30",
-          "Vorgänger": "",
+          "Vorgänger": "39",
           "Resource": ""
         },
         {
@@ -456,7 +456,7 @@
           "Start": "2026-08-30",
           "Dauer": 0,
           "Ende": "2026-08-30",
-          "Vorgänger": "",
+          "Vorgänger": "41;42;43;44",
           "Resource": ""
         }
       ]
